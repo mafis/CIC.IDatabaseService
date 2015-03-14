@@ -21,7 +21,6 @@ namespace CIC.IDatabase.SQLite
 
 		public void Dispose ()
 		{
-			sqliteConnection.Dispose ();
 		}
 
 		public int DropTable<T> ()
