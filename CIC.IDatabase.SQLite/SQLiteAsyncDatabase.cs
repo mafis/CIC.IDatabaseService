@@ -6,7 +6,7 @@ using SQLiteNetExtensionsAsync.Extensions;
 
 namespace CIC.IDatabase.SQLite
 {
-	public class SQLiteAsyncDatabase : IDatabaseAsync
+	public class SQLiteAsyncDatabase 
 	{
 		SQLiteAsyncConnection sqliteAsyncConnection;
 
@@ -17,9 +17,6 @@ namespace CIC.IDatabase.SQLite
 
 		#region IDatabaseAsync implementation
 
-		public void Dispose ()
-		{
-		}
 		/*
 		public Task<CreateTablesResult> CreateTableAsync<T> (CancellationToken cancellationToken = default(CancellationToken)) where T : new()
 		{
