@@ -16,6 +16,10 @@ namespace CIC.IDatabase.SQLite
 		}
 
 		#region IDatabaseAsync implementation
+
+		public void Dispose ()
+		{
+		}
 		/*
 		public Task<CreateTablesResult> CreateTableAsync<T> (CancellationToken cancellationToken = default(CancellationToken)) where T : new()
 		{

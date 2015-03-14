@@ -8,7 +8,7 @@ using System.Reflection;
 
 namespace CIC.IDatabase
 {
-	public interface IDatabaseAsync
+	public interface IDatabaseAsync : IDisposable
 	{
 		/*Task<CreateTablesResult> CreateTableAsync<T> (CancellationToken cancellationToken = default(CancellationToken)) where T : new();
 
